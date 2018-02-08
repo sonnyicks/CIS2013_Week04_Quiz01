@@ -7,7 +7,7 @@ int main()
 	int num_bars = 0;
 	int num_foos = 0;
 
-	bool run_again = true;
+	char quit = 'c';
 	while (num_loop <= 2000) {
 		if ((num_loop % 50 != 0) && (num_loop % 33 != 0)) {
 			cout << num_loop << endl;
@@ -28,6 +28,7 @@ int main()
 		num_loop = num_loop + 1;
 	}
 	cout << "There are " << num_foos << " Foos and " << num_bars << " Bars." << endl;
-	cin >> run_again;
+	cout << "Press any key to quit.: ";
+	cin >> quit;
 	return 0;
 }
